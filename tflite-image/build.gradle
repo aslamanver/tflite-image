@@ -6,7 +6,7 @@ publish {
     repoName = 'android'
     groupId = 'com.aslam'
     artifactId = 'tflite-image'
-    publishVersion = '1.0.41'
+    publishVersion = '1.0.42'
     desc = 'TFLite-Image for Android - TensorFlow Lite inception model image library for Android'
     website = 'https://github.com/aslamanver/tflite-image'
 }
