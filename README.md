@@ -76,7 +76,7 @@ Jeans - 70% <br/>
 ### Demonstration
 [![Screenshot](/screenshots/1.png)](/screenshots/1.png)
 
-Test our sample app: [TFLite-Image-v1.0.apk](https://drive.google.com/file/d/1YFNNx25bvUhahTkaL_TrRV3MLaQCXedT/view?usp=sharing)
+Test the sample app that I made for you: [TFLite-Image-v1.0.apk](https://drive.google.com/file/d/1YFNNx25bvUhahTkaL_TrRV3MLaQCXedT/view?usp=sharing)
 
 <hr/>
 
