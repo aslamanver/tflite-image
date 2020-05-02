@@ -21,7 +21,7 @@ You can use the sample inception quant or float model that we used in this proje
 Add the below dependency into your module level `build.gradle` file
 
 ```gradle
-implementation 'com.aslam:tflite-image:1.0.4'
+implementation 'com.aslam:tflite-image:+'
 ```
 
 Make sure you have added no compress config for your model files
