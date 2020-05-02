@@ -1,0 +1,50 @@
+apply plugin: 'com.novoda.bintray-release'
+apply plugin: 'com.android.library'
+
+publish {
+    userOrg = 'aslam'
+    repoName = 'android'
+    groupId = 'com.aslam'
+    artifactId = 'tflite-image'
+    publishVersion = '1.0.4'
+    desc = 'TFLite-Image for Android - TensorFlow Lite inception model image library for Android'
+    website = 'https://github.com/aslamanver/tflite-image'
+}
+
+android {
+    compileSdkVersion 29
+    buildToolsVersion "29.0.3"
+
+    defaultConfig {
+        minSdkVersion 22
+        targetSdkVersion 29
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        consumerProguardFiles 'consumer-rules.pro'
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    aaptOptions {
+        noCompress "tflite"
+        noCompress "lite"
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+
+    implementation 'org.tensorflow:tensorflow-lite:+'
+}
