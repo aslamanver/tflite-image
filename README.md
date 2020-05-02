@@ -4,7 +4,7 @@ Building a custom image classifier for your Android application using TensorFlow
 
 ![https://i.imgur.com/lGObtU8.png](https://i.imgur.com/O62Wcof.png)
 
-[ ![Download](https://api.bintray.com/packages/aslam/android/tflite-image/images/download.svg) ](https://bintray.com/aslam/android/tflite-image) [![](https://jitpack.io/v/aslamanver/tflite-image.svg)](https://jitpack.io/#aslamanver/tflite-image) [![Build Status](https://travis-ci.org/aslamanver/tflite-image.svg?branch=master)](https://travis-ci.org/aslamanver/tflite-image)
+[ ![Download](https://api.bintray.com/packages/aslam/android/tflite-image/images/download.svg) ](https://bintray.com/aslam/android/tflite-image) [![](https://jitpack.io/v/aslamanver/tflite-image.svg)](https://jitpack.io/#aslamanver/tflite-image) [![Build Status](https://travis-ci.com/aslamanver/tflite-image.svg?branch=master)](https://travis-ci.com/aslamanver/tflite-image)
 
 TFLite-Image for Android - TensorFlow Lite inception model image library for Android
 
