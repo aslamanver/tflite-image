@@ -8,9 +8,9 @@ Building a custom image classifier for your Android application using TensorFlow
 
 TFLite-Image for Android - TensorFlow Lite inception model image library for Android
 
-Move your trained model to asset folder or prepare a new image inception model using Google machine learning library https://teachablemachine.withgoogle.com/
+Move your trained model to asset folder or prepare a new image inception model using Google [teachablemachine](https://teachablemachine.withgoogle.com) machine learning library.
 
-You can use the sample inception quant or float model that we used in this project.
+You can use the sample inception quant or float model that we used in this project with 299 image dimension.
 
 - [inception_quant.tflite](https://github.com/aslamanver/tflite-image/blob/master/app/src/main/assets/inception_quant.tflite)
 - [inception_float.tflite](https://github.com/aslamanver/tflite-image/blob/master/app/src/main/assets/inception_float.tflite)
