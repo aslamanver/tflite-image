@@ -70,7 +70,7 @@ public class TFLiteImage {
         this.label = label;
         this.type = type;
         this.DIM_IMG_SIZE_X = DIM_IMG_SIZE_X;
-        this.DIM_IMG_SIZE_Y = DIM_IMG_SIZE_X;
+        this.DIM_IMG_SIZE_Y = DIM_IMG_SIZE_Y;
         // initialize array that holds image data
         intValues = new int[DIM_IMG_SIZE_X * DIM_IMG_SIZE_Y];
         //initilize graph and labels
