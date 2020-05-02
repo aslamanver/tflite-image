@@ -1,6 +1,6 @@
 # TFLite-Image
 Let's make machine learning simple. <br/>
-Building a custom image classifier for your android application.
+Building a custom image classifier for your Android application using TensorFlow Lite.
 
 ![https://i.imgur.com/lTcoW1o.png](https://i.imgur.com/lTcoW1o.png)
 
@@ -40,9 +40,10 @@ android {
 You need to pass the model file, label text and the model type.
 
 ```java
-TFLiteImage tfLite = TFLiteImage.getInstance(activity, "your_model_file.tflite", "labels.txt", TFLiteImage.TYPE.QUANT);
+TFLiteImage tfLite = TFLiteImage.getInstance(activity, "your_model_file.tflite", "labels.txt", TFLiteImage.TYPE.QUANT, IMG_DIM_SIZE);
 List<Map<String, String>> results = tfLite.predictImage(image view or bitmap image);
 ```
+> `IMG_DIM_SIZE` is 299 or 224 according to your model, you can visualize your model data to check `IMG_DIM_SIZE`.
 
 Inception model types
 ```java
