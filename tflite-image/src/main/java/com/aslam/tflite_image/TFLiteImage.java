@@ -64,11 +64,13 @@ public class TFLiteImage {
     private String label;
     private TYPE type;
 
-    private TFLiteImage(Context context, String model, String label, TYPE type) {
+    private TFLiteImage(Context context, String model, String label, TYPE type, int DIM_IMG_SIZE_X, int DIM_IMG_SIZE_Y) {
         this.context = context;
         this.model = model;
         this.label = label;
         this.type = type;
+        this.DIM_IMG_SIZE_X = DIM_IMG_SIZE_X;
+        this.DIM_IMG_SIZE_Y = DIM_IMG_SIZE_X;
         // initialize array that holds image data
         intValues = new int[DIM_IMG_SIZE_X * DIM_IMG_SIZE_Y];
         //initilize graph and labels
@@ -97,8 +99,16 @@ public class TFLiteImage {
         topConfidence = new String[RESULTS_TO_SHOW];
     }
 
+    public static TFLiteImage getInstance(Context context, String model, String label, TYPE type, int DIM_IMG_SIZE_X, int DIM_IMG_SIZE_Y) {
+        return new TFLiteImage(context, model, label, type, DIM_IMG_SIZE_X, DIM_IMG_SIZE_Y);
+    }
+
+    public static TFLiteImage getInstance(Context context, String model, String label, TYPE type, int DIM_IMG_SIZE) {
+        return new TFLiteImage(context, model, label, type, DIM_IMG_SIZE, DIM_IMG_SIZE);
+    }
+
     public static TFLiteImage getInstance(Context context, String model, String label, TYPE type) {
-        return new TFLiteImage(context, model, label, type);
+        return new TFLiteImage(context, model, label, type, 299, 299);
     }
 
     public List<Map<String, String>> predictImage(Bitmap bitmapFile) {
