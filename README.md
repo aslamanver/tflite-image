@@ -2,7 +2,7 @@
 Let's make machine learning simple. <br/>
 Building a custom image classifier for your Android application using TensorFlow Lite.
 
-![https://i.imgur.com/lGObtU8.png](https://i.imgur.com/lGObtU8.png)
+![https://i.imgur.com/lGObtU8.png](https://i.imgur.com/ZXLl9ll.png)
 
 [ ![Download](https://api.bintray.com/packages/aslam/android/tflite-image/images/download.svg) ](https://bintray.com/aslam/android/tflite-image) [![](https://jitpack.io/v/aslamanver/tflite-image.svg)](https://jitpack.io/#aslamanver/tflite-image) [![Build Status](https://travis-ci.org/aslamanver/tflite-image.svg?branch=master)](https://travis-ci.org/aslamanver/tflite-image)
 
