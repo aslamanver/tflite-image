@@ -18,10 +18,24 @@ You can use the sample inception quant or float model that we used in this proje
 
 ### Initialization
 
-Add the below dependency into your module level `build.gradle` file
+Add the below repository into your project level build.gradle file.
 
 ```gradle
-implementation 'com.aslam:tflite-image:+'
+allprojects {
+    repositories {
+        ...
+        maven { url 'https://jitpack.io' }
+    }
+}
+```
+
+Add the below dependency into your module level `build.gradle` file.
+
+```gradle
+dependencies {
+    ...
+    implementation 'com.github.aslamanver:retrofit-lite:v2.0.6'
+}
 ```
 
 Make sure you have added no compress config for your model files
