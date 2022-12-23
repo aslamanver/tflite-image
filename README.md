@@ -1,5 +1,5 @@
 # TFLite-Image
-Let's make machine learning simple. <br/>
+Let's make machine learning simple.<br/>
 Building a custom image classifier for your Android application using TensorFlow Lite.
 
 ![https://i.imgur.com/lGObtU8.png](https://i.imgur.com/O62Wcof.png)
